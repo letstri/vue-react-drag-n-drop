@@ -1,4 +1,4 @@
-# file-uploader
+# vue-3-drag-n-drop
 
 ## Project setup
 ```
