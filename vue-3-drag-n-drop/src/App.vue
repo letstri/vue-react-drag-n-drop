@@ -1,5 +1,5 @@
 <template>
-  <PhotoUploader v-model="test" />
+  <PhotoUploader v-model="files" />
 </template>
 
 <script lang="ts">
@@ -12,9 +12,9 @@ export default defineComponent({
   },
 
   setup() {
-    const test = ref([]);
+    const files = ref([]);
 
-    return { test };
+    return { files };
   },
 });
 </script>
