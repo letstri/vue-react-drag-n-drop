@@ -1,0 +1,74 @@
+.photo-uploader {
+  &__wrapper {
+    position: relative;
+    text-align: center;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px dotted #eee;
+    border-radius: 10px;
+    color: rgba(#000, 0.5);
+
+    &--drag {
+      color: rgba(#fff, 0);
+      border-color: #777;
+    }
+  }
+
+  &__input {
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__photos {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  &__photo {
+    position: relative;
+    width: 200px;
+    margin-right: 60px;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+
+  &__remove {
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    top: 0;
+    left: calc(100% + 10px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(#000, 0.05);
+    border: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: calc(50% - 1px);
+      left: calc(50% - 5px);
+      width: 10px;
+      height: 2px;
+      background-color: #000;
+    }
+  }
+
+  &__icon {
+    opacity: 0.3;
+    width: 50px;
+  }
+}

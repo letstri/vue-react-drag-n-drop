@@ -1,0 +1,10 @@
+body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 100px 15px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
