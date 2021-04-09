@@ -6,10 +6,10 @@
     >
       <input
         ref="input"
-        type="file"
         class="photo-uploader__input"
-        title=""
+        type="file"
         multiple
+        title=""
         @change="uploadFile"
         @dragenter="isDragStarted = true"
         @dragleave="isDragStarted = false"
@@ -17,9 +17,9 @@
       {{ isDragStarted ? '' : uploadText }}
       <img
         v-show="isDragStarted"
-        class="photo-uploader__icon"
         src="@/assets/images/upload.svg"
-        alt="Upload"
+        class="photo-uploader__icon"
+        alt="Загрузите фото"
       >
     </div>
     <div class="photo-uploader__photos">
@@ -45,8 +45,8 @@
 import {
   computed,
   defineComponent,
-  PropType,
   ref,
+  PropType,
   toRefs,
 } from 'vue';
 
@@ -99,13 +99,13 @@ export default defineComponent({
     });
 
     return {
-      needToUpload,
-      uploadFile,
-      input,
       isDragStarted,
-      getSrc,
-      removePhoto,
       uploadText,
+      input,
+      uploadFile,
+      removePhoto,
+      needToUpload,
+      getSrc,
     };
   },
 });
@@ -137,8 +137,8 @@ export default defineComponent({
     top: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
     left: 0;
+    width: 100%;
     opacity: 0;
   }
 

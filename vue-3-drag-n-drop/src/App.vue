@@ -12,9 +12,13 @@ export default defineComponent({
   },
 
   setup() {
-    const files = ref([]);
+    const files = ref<Array<File>>([]);
 
     return { files };
   },
 });
 </script>
+
+<style lang="scss">
+@import "~@/assets/scss/global.scss";
+</style>
